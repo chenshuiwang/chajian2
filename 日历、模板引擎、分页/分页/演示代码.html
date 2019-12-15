@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入这个 -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <ul id="pagination" class="pagination-sm"></ul>
+</body>
+<script src="./jquery-1.12.4.min.js"></script>
+<script src="./jquery.twbsPagination.js"></script>
+<script>
+    //let a = document.querySelector('#pagination')
+    $('#pagination').twbsPagination({
+          totalPages: 7,
+          visiblePages: 7,
+          first: '首页',
+          prev: '上一页',
+          next: '下一页',
+          last: '尾页',
+        });
+</script>
+</html>

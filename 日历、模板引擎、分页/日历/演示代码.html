@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./jeDate-test.css">
+    <link rel="stylesheet" href="./jedate.css">
+    <link rel="stylesheet" href="./iconfont.css">
+
+</head>
+<body>
+    <div class="jeinpbox col-sm-4">
+        <input type="text" class="jeinput" id="testico" placeholder="YYYY-MM-DD" name="date">
+        <div class="icons jebtns" onclick="jeDate('#testico',{trigger:false,format: 'YYYY-MM-DD',zIndex:30000})">
+        </div>
+    </div>
+</body>
+
+<script src="./jquery-1.12.4.min.js"></script>
+<script src="./bootstrap.min.js"></script>
+<script src="./jedate.js"></script>
+<script>
+    // 3.添加日期插件 
+            //添加这个方法的目的是为了让日期插件在点击输入框的时候也能关联到日期
+            jeDate("#testico", {
+                format: "YYYY-MM-DD",
+                isTime: false,
+                minDate: "2014-09-19 00:00:00",
+                zIndex:30000
+            })
+</script>
+</html>
